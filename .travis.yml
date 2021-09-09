@@ -3,7 +3,7 @@ serviced:
   - docker
 
 before_install:
-  - docker build -t scoquix/Docker-React -f Dockerfile.dev .
+  - docker build -t scoquix/docker-react -f Dockerfile.dev .
 
 script:
-  - docker run -e CI=true scoquix/Docker-React npm run test
+  - docker run -e CI=true scoquix/docker-react npm run test
